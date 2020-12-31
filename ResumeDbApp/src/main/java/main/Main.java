@@ -15,7 +15,7 @@ public class Main {
         //getbyname metodu skillde olan listsiz yoxla bidene
         UserDaoInter userDao= Context.instanceUserDao();
      
-        System.out.println(userDao.getAll());
+
 //       u.setName("Azad");
 //        System.out.println(userDao.updateUser(u));
 //   

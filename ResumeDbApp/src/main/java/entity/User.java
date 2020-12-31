@@ -9,6 +9,7 @@ public class User {
     private String name;
     private String surname;
     private String email;
+    private String password;
     private String profileDesc;
     private String adress;
     private String phone;
@@ -46,7 +47,6 @@ public class User {
         this.adress = adress;
     }
 
-    
     public Date getBirthDate() {
         return birthDate;
     }
@@ -127,12 +127,17 @@ public class User {
         this.profileDesc = profileDesc;
     }
 
-    @Override
-    public String toString() {
-        return "User{" + "id=" + id + ", name=" + name + ", surname=" + surname +  ", profileDesc=" + profileDesc + ", adress=" + adress + ", phone=" + phone + ", email=" + email +", birthDate=" + birthDate + ", nationality=" + nationality + ", birthPlace=" + birthPlace + ", skills=" + skills + '}';
+    public String getPassword() {
+        return password;
     }
 
-   
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
-     
+    @Override
+    public String toString() {
+        return "User{" + "id=" + id + ", name=" + name + ", surname=" + surname +  ", profileDesc=" + profileDesc + ", adress=" + adress + ", phone=" + phone + ", email=" + email +", birthDate=" + birthDate + ", nationality=" + nationality + ", birthPlace=" + birthPlace + ", skills=" + skills + ", password=" + password+ '}';
+    }
+
 }

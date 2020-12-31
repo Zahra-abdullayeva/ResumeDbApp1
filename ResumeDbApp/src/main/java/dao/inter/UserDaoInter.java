@@ -5,7 +5,9 @@ import entity.UserSkill;
 import java.util.List;
 
 public interface UserDaoInter {
-    public List<User> getAll();//geriye user obyektinden ibaret list return eden metod
+   public User findByEmailAndPassword(String email, String password);
+   public User findByEmail(String email);
+    public List<User> getAll(String name,String surname,Integer nationalityId);//geriye user obyektinden ibaret list return eden metod
      public User getById(int id);
     public boolean updateUser(User u);
      public boolean addUser(User u);
